@@ -1,0 +1,5 @@
+[module/docker]
+type = custom/script
+exec = docker ps -q | wc -l
+interval = 1
+label =  %output%
